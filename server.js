@@ -8,9 +8,9 @@ var port = process.env.PORT || 3000;
 app.use(express.json());
 
 // Connection URL
-const url = 'mongodb://localhost:27017';
+const url = 'mongodb://root:azerty1@ds161764.mlab.com:61764';
 // Database Name
-const dbName = 'chat-bot';
+const dbName = 'heroku_jb7sv8s5';
 
 app.listen(port, () => {
   console.log("Listening on port", port);
