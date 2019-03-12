@@ -30,7 +30,7 @@ app.get("/messages/all", async (req, res) => {
   client.close();
 });
 
-app.get('/messages/last', async (req, res) => {
+app.delete('/messages/last', async (req, res) => {
   const client = new MongoClient(url);
     try {
       await client.connect();
